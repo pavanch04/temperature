@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Teamperature Converter</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:linear-gradient(green,red)
+}
+.container {
+  color:white;
+  background-color:lightpink;
+  min-width: 450px;
+  border-radius: 20px;
+  height: 250px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+.celcius,
+.fahrenheit,
+.kelvin {
+  margin-left: 30%;
+  margin-bottom: 3px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  height: 50px;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: -5px;
+  text-align: center;
+  font-size: 15px;
+}
+#icon {
+  background-color: black;
+  font-size: 30px;
+  border-radius: 0px 10px 10px 0px;
+  padding-top: 1.5px;
+  padding-bottom: 13.5px;
+  padding-right: 10px;
+}
+.button {
+  margin-top: 10px;
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Temperature Converter</h1>
+        <span id="ts"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+      </div>
+      <div class="celcius">
+        <input type="number" placeholder="Celcius" />
+        <span id="icon">&#8451</span>
+      </div>
+      <div class="fahrenheit">
+        <input type="number" placeholder="Fahrenheit" />
+        <span id="icon">&#8457</span>
+      </div>
+      <div class="kelvin">
+        <input type="number" placeholder="Kelvin" />
+        <span id="icon">&#8490</span>
+      </div>
+      <div class="button">
+        <button>All clear</button>
+      </div>
+    </div>
+    <script src="temp.js"></script>
+  </body>
+</html>
